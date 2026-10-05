@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>SHINOBI STRIKE — Chakra Arena</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="vig"></div>
+<div id="hud">
+ <canvas id="mm" width="138" height="138"></canvas>
+ <div id="ally">ALLY<div class="bar"><i></i></div></div>
+ <div id="top"><canvas id="compass" width="280" height="26"></canvas><div id="sc"></div></div>
+ <div id="feed"></div><button id="pause">II</button>
+ <div id="xh"><i class="h"></i><i class="v"></i></div><div id="hm"></div><div id="dmg"></div><div id="di"></div>
+ <div id="msg"></div><div id="ev"></div>
+ <div id="strk"><div class="chip" id="c1">[1] BYAKUGAN</div><div class="chip" id="c2">[2] SCROLL</div><div class="chip" id="c3">[3] METEOR</div></div>
+ <div id="php"><span id="hpt">100</span><div class="bar" id="armb"><i></i></div><div class="bar"><i></i></div></div>
+ <div id="ammo"></div>
+ <div id="stick"><i></i></div>
+ <div class="tb fb" id="fire">FIRE</div><div class="tb ab" id="ads">ADS</div>
+ <div class="tb ab" id="jump">JUMP</div><div class="tb ab" id="gloo">WALL</div><div class="tb ab" id="reload">RLD</div><div class="tb ab" id="heal">HEAL</div><div class="tb ab" id="nade">TAG</div><div class="tb ab" id="crouch">CRCH</div>
+</div>
+<div class="ovl" id="end"><h1 id="endT">VICTORY</h1><div id="endStats"></div>
+ <button id="again">PLAY AGAIN</button><button id="toMenu">MAIN MENU</button></div>
+<div class="ovl" id="ov"><h1>SHINOBI STRIKE</h1><p>Chakra Arena - a cozy ninja-port showdown at sunset. Sakura petals, torii gates, ramen stalls, chakra rails, rooftop parkour. Bots flank, heal and hunt in packs - or challenge anyone online.</p>
+ <button id="resume" hidden>RESUME MATCH</button>
+ <input id="nm" placeholder="Callsign (optional)" maxlength="14">
+ <h2>OFFLINE</h2>
+ <button data-m="duel">1v1 DUEL<small>First to 10 eliminations - 6 min</small></button>
+ <button data-m="squad">2v2 SQUAD TDM<small>You + AI partner vs two AI, first team to 20 - 8 min</small></button>
+ <button data-m="br">BATTLE ROYALE<small>You vs 7 AI, closing storm, first to 11</small></button>
+ <button id="restart" hidden>RESTART MATCH</button>
+ <h2>ONLINE</h2>
+ <button id="on1">ONLINE 1v1<small>Quick match vs anyone - first to 11</small></button>
+ <button id="onbr">ONLINE FFA BATTLE ROYALE<small>Up to 8 shinobi free-for-all - first to 11</small></button>
+ <button id="ncancel" hidden>CANCEL SEARCH</button>
+ <p id="nstat"></p>
+ <div id="suggest" hidden><p>No players found...</p>
+  <button id="sugBot">START BOT MATCH INSTEAD</button>
+  <button id="sugCan">KEEP WAITING / CANCEL</button></div>
+ <h2>SETTINGS</h2>
+ <div class="r"><button id="dif">Bots: Regular</button><button id="wp">Gun: AR</button><button id="qly">Quality: High</button></div>
+ <div class="r"><button id="aim">Aim assist: On</button><button id="inv">Invert Y: Off</button></div>
+ <p>Sensitivity</p><input type="range" id="sens" min=".4" max="2.2" step=".1" value="1" style="padding:4px">
+ <div id="xpw"><i></i></div><div id="xpt"></div>
+ <h2>BRIEFING</h2>
+ <p id="how"></p></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/game.js"></script>
+<script src="js/net.js"></script>
+</body></html>
