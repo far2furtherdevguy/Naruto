@@ -1,0 +1,9 @@
+{
+  "name": "shinobi-strike",
+  "version": "1.0.0",
+  "description": "Chakra Arena - offline + online 1v1 & FFA battle royale browser shooter",
+  "main": "server.js",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=16"},
+  "license": "MIT"
+}
